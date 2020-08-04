@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./rocket.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="./galaxy.css" />
+    <title>Portfolio | Bhavyaa Arora</title>
+  </head>
+  <body>
+    <div class="scene preloader">
+      <h1 style="color: white;">Landing...</h1>
+
+      <div class="rocket">
+        <img width="80px" height="200px" src="./rocket.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- <canvas id="c"></canvas> -->
+
+    <script src="https://rawgit.com/mattboldt/typed.js/v2.0.6/lib/typed.min.js"></script>
+    <div class="content hide">
+      <img src="./assets/bg.png" id="bg" />
+      <img src="./assets/moon.png" id="moon" />
+      <img src="./assets/mountain.png" id="mountain" />
+      <img src="./assets/road.png" id="road" />
+      <div class="header-area">
+        <h1 class="element" id="text">
+          Hey! I'm Bhavyaa Arora. <br />
+          I can build
+          <span id="typed"></span>
+          <script>
+            var options = {
+              strings: ["Websites", "Web Apps", "Desktop Apps"],
+              typeSpeed: 40,
+              backSpeed: 70,
+              loop: true,
+            };
+            var typed = new Typed("#typed", options);
+          </script>
+        </h1>
+      </div>
+    </div>
+
+    <div class="container1 hide">
+      <h1 id="project-heading">
+        PROJECTS
+      </h1>
+      <div class="projects">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              A
+            </div>
+            <div class="back">
+              B
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section>
+      <div class="galaxy">
+        <div class="stars"></div>
+      </div>
+    </section> -->
+
+    <div id="my-section" class="hide">
+      <div class="active" id="wrap-cta">
+        <button style="font-size: 2rem;" id="cta">Contact Me</button>
+      </div>
+      <svg viewBox="0 0 215 110" preserveAspectRatio="none">
+        <polygon class="polymorph" points="215,110 0,110 0,0 215,0"></polygon>
+      </svg>
+      <div class="container">
+        <div id="content">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Dolor sit amet et consectquo lorem ipsum dolor sit amet</p>
+          <button id="close">Ok, close me</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function stars() {
+        let count = 30;
+        let scene = document.querySelector(".scene");
+        let i = 0;
+        while (i < count) {
+          let star = document.createElement("i");
+          let x = Math.floor(Math.random() * window.innerWidth);
+          let duration = Math.random() * 1;
+          let h = Math.random() * 100;
+          star.style.left = x + "px";
+          star.style.width = 1 + "px";
+          star.style.height = 50 + h + "px";
+          star.style.animationDuration = duration + "s";
+          scene.appendChild(star);
+          i++;
+        }
+      }
+      stars();
+    </script>
+    <script src="./main.js"></script>
+    <script src="./card.js"></script>
+    <!-- <script src="./about.js"></script> -->
+  </body>
+</html>
