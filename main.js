@@ -2,16 +2,16 @@
 
 // when the whole website loads
 window.addEventListener("load", async () => {
-  setTimeout(() => {
-    $(".preloader .rocket").addClass("rocket-exit");
-    $(".preloader h1").addClass("rocket-exit");
-  }, 1200);
+  // setTimeout(() => {
+  $(".preloader .rocket").addClass("rocket-exit");
+  $(".preloader h1").addClass("rocket-exit");
+  // }, 1200);
 
-  $(".preloader").fadeOut(1500, () => {
-    $(".content").removeClass("hide");
-    $("#my-section").removeClass("hide");
-    $(".container1").removeClass("hide");
-  });
+  // $(".preloader").fadeOut(1500, () => {
+  $(".content").removeClass("hide");
+  $("#my-section").removeClass("hide");
+  $(".container1").removeClass("hide");
+  // });
   let bg = document.querySelector("#bg");
   let moon = document.querySelector("#moon");
   // let mountain = document.querySelector("#mountain");
