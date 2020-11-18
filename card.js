@@ -39,7 +39,6 @@ btnClose.addEventListener("click", () => {
 });
 
 const cards = document.querySelectorAll(".card");
-console.log(cards);
 
 var playing = [];
 
@@ -49,7 +48,6 @@ for (var i = 0; i < cards.length; i++) {
 
 for (var i = 0; i < cards.length; i++) {
   const card = cards[i];
-  console.log(card);
   card.addEventListener("click", function () {
     if (playing[i]) return;
 
